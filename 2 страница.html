@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары | Harmony Yoga</title>
+    <link rel="stylesheet" href="yoga2.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="all_menu">
+        <div class="logo">
+            <h1><img src="ЛОГОТИП.png" alt="Harmony Yoga"></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="1 страница.html">ГЛАВНАЯ</a></li>
+                <li><a href="2 страница.html" class="active">ТОВАР</a></li>
+                <li><a href="">ХАРАКТЕРИСТИКИ</a></li>
+                <li><a href="">ДАННЫЕ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Основной контент -->
+    <div class="products-container">
+        <h1 class="section-title">Магазин товаров для йоги</h1>
+        <!-- Поиск и сортировка -->
+        <div class="search-sort-container">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Поиск товаров...">
+                <button class="btn-search">Найти</button>
+            </div>
+            <div class="sort-buttons">
+                <button data-sort="price" class="btn-sort">По цене</button>
+                <button data-sort="name" class="btn-sort">По названию</button>
+            </div>
+        </div>
+        <!-- Список товаров -->
+        <div class="products-list">
+            <div class="product" data-name="Коврик для йоги" data-price="1999">
+                <div class="product-image">
+                    <img src="коврик.jpeg" alt="Коврик">
+                </div>
+                <div class="product-info">
+                    <h3>Коврик для йоги</h3>
+                    <p class="price">1999 ₽</p>
+                </div>
+            </div>
+            <div class="product" data-name="Блоки для йоги" data-price="899">
+                <div class="product-image">
+                    <img src="блоки.jpg" alt="Блоки">
+                </div>
+                <div class="product-info">
+                    <h3>Блоки для йоги</h3>
+                    <p class="price">899 ₽</p>
+                </div>
+            </div>
+            <div class="product" data-name="Курильницв для йоги" data-price="899">
+                <div class="product-image">
+                    <img src="курильница.jpeg" alt="Курильница">
+                </div>
+                <div class="product-info">
+                    <h3>Курильница для йоги</h3>
+                    <p class="price">999 ₽</p>
+                </div>
+            </div>
+        </div>
+        <!-- Пагинация -->
+        <div class="pagination">
+            <button class="btn-pagination prev">Назад</button>
+            <span class="current-page">1</span>
+            <button class="btn-pagination next">Вперед</button>
+        </div>
+    </div>
+    <!-- Футер -->
+    <footer>
+        <div class="vk-link">
+            <p><b>ВК:</b> <a href="https://vk.com/id383207334">Науменко Милена</a> &nbsp; +7 915 799 08 95</p>
+            <p>© 2025 Harmony Yoga Studio. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
