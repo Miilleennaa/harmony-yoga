@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Harmony Yoga</title>
+    <link rel="stylesheet" href="yoga3.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="all_menu">
+        <div class="logo">
+            <h1><img src="ЛОГОТИП.png" alt="Harmony Yoga"></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="1 страница.html">ГЛАВНАЯ</a></li>
+                <li><a href="2 страница.html">ТОВАР</a></li>
+                <li><a href="3 страница.html" class="active">О НАС</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Галерея -->
+    <div class="gallery-section">
+        <h1 class="gallery-title">Атмосфера Harmony Yoga</h1>
+        <div class="gallery-container">
+            <!-- 1 -->
+            <div class="gallery-item">
+                <img src="утренняя йога.jpeg" alt="Утренняя практика" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Утренняя практика</h3>
+                    <p>Первые лучи солнца в нашем главном зале</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="gallery-item">
+                <img src="чайная церемония.jpeg" alt="Чайная церемония" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Чайная церемония</h3>
+                    <p>Традиции восточного чаепития</p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="gallery-item">
+                <img src="зона медитации.jpg" alt="Зона медитации" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Зона медитации</h3>
+                    <p>Пространство для внутреннего диалога</p>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="gallery-item">
+                <img src="вечерняя йога.jpg" alt="Вечерние занятия" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Вечерние занятия</h3>
+                    <p>Специальное освещение для релаксации</p>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="gallery-item">
+                <img src="садовый двоирк.jpg" alt="Садовый дворик" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Садовый дворик</h3>
+                    <p>Летние занятия на свежем воздухе</p>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="gallery-item">
+                <img src="библиотека.jpeg" alt="Библиотека" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Библиотека</h3>
+                    <p>Коллекция книг по философии йоги</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Система комментариев -->
+    <div class="comments-section">
+        <h2 class="comments-title">Отзывы наших учеников</h2>
+        <!-- Форма добавления комментария -->
+        <form id="commentForm" class="comment-form">
+            <h3 class="form-title">Оставьте ваш отзыв</h3>
+            <div class="form-group">
+                <label for="userName" class="form-label">Ваше имя</label>
+                <input type="text" id="userName" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="userEmail" class="form-label">Email (необязательно)</label>
+                <input type="email" id="userEmail" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="userRating" class="form-label">Оценка</label>
+                <select id="userRating" class="form-input">
+                    <option value="5">★★★★★ Отлично</option>
+                    <option value="4">★★★★☆ Хорошо</option>
+                    <option value="3">★★★☆☆ Удовлетворительно</option>
+                    <option value="2">★★☆☆☆ Плохо</option>
+                    <option value="1">★☆☆☆☆ Ужасно</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="userComment" class="form-label">Ваш отзыв</label>
+                <textarea id="userComment" class="form-textarea" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить отзыв</button>
+        </form>
+        <!-- Список комментариев -->
+        <div class="comments-list" id="commentsContainer">
+            <!-- Пример комментария -->
+            <div class="comment" style="opacity: 1; transform: translateY(0);">
+                <div class="comment-rating">★★★★★</div>
+                <div class="comment-header">
+                    <div class="comment-avatar">М</div>
+                    <div>
+                        <div class="comment-author">Вика Смирнова</div>
+                        <div class="comment-date">15 июня 2025</div>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    Прекрасная студия с удивительной атмосферой. После занятий чувствуешь себя обновленным! Преподаватели очень внимательные и профессиональные. Обязательно буду продолжать заниматься здесь.
+                </div>
+            </div>
+            <!-- Контейнер для новых комментариев -->
+            <!-- JavaScript будет добавлять сюда комментарии -->
+        </div>
+    </div>
+    <!-- Футер -->
+    <footer>
+        <div class="vk-link">
+            <p><b>ВК:</b> <a href="https://vk.com/id383207334">Науменко Милена</a> &nbsp; +7 915 799 08 95</p>
+            <p>© 2025 Harmony Yoga Studio. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
