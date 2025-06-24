@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="yoga3.css">
 </head>
 <body>
+    <script src="javayoga3.js"></script>
     <!-- Шапка -->
     <div class="all_menu">
         <div class="logo">
@@ -107,23 +108,13 @@
         </form>
         <!-- Список комментариев -->
         <div class="comments-list" id="commentsContainer">
-            <!-- Пример комментария -->
-            <div class="comment" style="opacity: 1; transform: translateY(0);">
-                <div class="comment-rating">★★★★★</div>
-                <div class="comment-header">
-                    <div class="comment-avatar">М</div>
-                    <div>
-                        <div class="comment-author">Вика Смирнова</div>
-                        <div class="comment-date">15 июня 2025</div>
-                    </div>
-                </div>
-                <div class="comment-content">
-                    Прекрасная студия с удивительной атмосферой. После занятий чувствуешь себя обновленным! Преподаватели очень внимательные и профессиональные. Обязательно буду продолжать заниматься здесь.
-                </div>
-            </div>
             <!-- Контейнер для новых комментариев -->
-            <!-- JavaScript будет добавлять сюда комментарии -->
         </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
     </div>
     <!-- Футер -->
     <footer>
@@ -132,5 +123,4 @@
             <p>© 2025 Harmony Yoga Studio. Все права защищены.</p>
         </div>
     </footer>
-</body>
-</html>
+    <!-- Модальное окно для увеличенного изображения -->
